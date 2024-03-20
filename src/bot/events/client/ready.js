@@ -1,11 +1,11 @@
-const { loadCommands } = require('../../handlers/commandHandler');
+const { loadCommands } = require("../../handlers/commandHandler");
 
 module.exports = {
-  name: 'ready',
+  name: "ready",
   once: true,
 
   async execute(interaction, client) {
     loadCommands(client);
-    client.logger.info(`${client.user.username} is online!`);
+    console.info(`${client.user.username} is online!`);
   },
 };

@@ -1,7 +1,7 @@
-const { ChatInputCommandInteraction, Client } = require('discord.js');
+const { ChatInputCommandInteraction, Client } = require("discord.js");
 
 module.exports = {
-  name: 'interactionCreate',
+  name: "interactionCreate",
 
   /**
    * @param {ChatInputCommandInteraction} interaction
@@ -13,20 +13,20 @@ module.exports = {
 
       if (!command) {
         return interaction.reply({
-          content: 'Outdated command! Please check in later.',
+          content: "Outdated command! Please check in later.",
           ephemeral: true,
         });
       }
 
       if (command.developer && interaction.user.id != client.config.developer)
         return interaction.reply({
-          content: 'This command is only avaiable to the Developer!',
+          content: "This command is only avaiable to the Developer!",
           ephemeral: true,
         });
 
       if (command.maintenance && interaction.user.id != client.config.developer) {
         return interaction.reply({
-          content: 'Command is currently under maintenance! Please check in later.',
+          content: "Command is currently under maintenance! Please check in later.",
           ephemeral: true,
         });
       }
