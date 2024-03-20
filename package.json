@@ -1,0 +1,26 @@
+{
+  "name": "discord-bot-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "start:dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxgg142/discord-bot-template.git"
+  },
+  "author": "lxgg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lxgg142/discord-bot-template/issues"
+  },
+  "homepage": "https://github.com/lxgg142/discord-bot-template#readme",
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "chalk": "^4.1.2",
+    "discord.js": "^14.7.1",
+    "nodemon": "^2.0.20"
+  }
+}
